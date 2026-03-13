@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const connectDB = require('./config/db');
 const cors = require('cors');
 
-dotenv.config({ path: './config/config.env' });
+dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
 
 connectDB();
 
